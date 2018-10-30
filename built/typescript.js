@@ -54,3 +54,18 @@ const fightMageArmy = (mages) => {
 ;
 const dog = {};
 dog.count = 5;
+// Function
+const magicArmyFight = (magicians) => {
+    return 23;
+};
+// Class
+class Animal {
+    constructor(sound) {
+        this.sing = 'lalala';
+        this.sing = sound;
+    }
+    greet() {
+        return `Hello ${this.sing}`;
+    }
+}
+const lion = new Animal('Roar');

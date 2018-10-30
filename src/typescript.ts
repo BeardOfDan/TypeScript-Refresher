@@ -83,5 +83,23 @@ interface CatArmy {
 const dog = {} as CatArmy;
 dog.count = 5;
 
+// Function
+const magicArmyFight = (magicians: MagicArmy): number => {
+  return 23;
+};
 
+// Class
+class Animal {
+  private sing: string = 'lalala'
+
+  constructor(sound: string) {
+    this.sing = sound;
+  }
+
+  greet(): string {
+    return `Hello ${this.sing}`;
+  }
+}
+
+const lion = new Animal('Roar');
 
