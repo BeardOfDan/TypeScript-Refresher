@@ -72,3 +72,16 @@ const fightMageArmy = (mages: { count: number, type: string, magic: string }) =>
   // same as above
   console.log(`Let's get ready to rumble!`);
 };
+
+// Type Assertion
+interface CatArmy {
+  count: number,
+  type: string,
+  magic?: string // optional property
+};
+
+const dog = {} as CatArmy;
+dog.count = 5;
+
+
+

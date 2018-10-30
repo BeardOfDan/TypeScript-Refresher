@@ -51,3 +51,6 @@ const fightMageArmy = (mages) => {
     // same as above
     console.log(`Let's get ready to rumble!`);
 };
+;
+const dog = {};
+dog.count = 5;
