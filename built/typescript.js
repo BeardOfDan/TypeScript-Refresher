@@ -69,3 +69,6 @@ class Animal {
     }
 }
 const lion = new Animal('Roar');
+// Union
+let confused = "hello";
+confused = 42;

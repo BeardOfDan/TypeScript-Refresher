@@ -103,3 +103,7 @@ class Animal {
 
 const lion = new Animal('Roar');
 
+// Union
+let confused: string | number = "hello";
+confused = 42;
+
