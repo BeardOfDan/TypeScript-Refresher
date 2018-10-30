@@ -47,3 +47,28 @@ const error = (): never => {
   // has neither a return type, nor a reachable end point
 };
 
+// interface
+interface MagicArmy {
+  count: number,
+  type: string,
+  magic: string
+};
+
+// similiar to, but not the same as the above interface
+// interface is more extensible than type
+// that's beyound the scope of this refresher, though
+type MagicalArmy = {
+  count: number,
+  type: string,
+  magic: string
+};
+
+const fightElvenArmy = (elves: MagicArmy) => {
+  // input must have the given properties/types
+  console.log('Fight!');
+};
+
+const fightMageArmy = (mages: { count: number, type: string, magic: string }) => {
+  // same as above
+  console.log(`Let's get ready to rumble!`);
+};

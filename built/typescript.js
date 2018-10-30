@@ -42,3 +42,12 @@ const error = () => {
     throw Error('whoops');
     // has neither a return type, nor a reachable end point
 };
+;
+const fightElvenArmy = (elves) => {
+    // input must have the given properties/types
+    console.log('Fight!');
+};
+const fightMageArmy = (mages) => {
+    // same as above
+    console.log(`Let's get ready to rumble!`);
+};
