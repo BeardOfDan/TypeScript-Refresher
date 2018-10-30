@@ -107,3 +107,6 @@ const lion = new Animal('Roar');
 let confused: string | number = "hello";
 confused = 42;
 
+// Automatic Type Inference
+let x = 2;
+// x = 'three'; // produces an error

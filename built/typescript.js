@@ -72,3 +72,6 @@ const lion = new Animal('Roar');
 // Union
 let confused = "hello";
 confused = 42;
+// Automatic Type Inference
+let x = 2;
+// x = 'three'; // produces an error
