@@ -1,16 +1,49 @@
-let isCool: boolean = true;
+// boolean
+const isCool: boolean = true;
 
-let age: number = 42;
+// number
+const age: number = 42;
 
-let eyeColor: string = 'brown';
-let favoriateQuote: string = `I'm not old, I'm only ${age}`;
+// string
+const eyeColor: string = 'brown';
+const favoriateQuote: string = `I'm not old, I'm only ${age}`;
 
-let pets: string[] = ['cat', 'dog', 'pig'];
-let pets2: Array<string> = ['lion', 'tiger', 'bear'];
+// array
+const pets: string[] = ['cat', 'dog', 'pig'];
+const pets2: Array<string> = ['lion', 'tiger', 'bear'];
 
-let wizard: object = {
+// object
+const wizard: object = {
   a: 'John'
 };
 
-let meh: undefined = undefined;
-let unbeing: null = null;
+// null and undefiend
+const meh: undefined = undefined;
+const unbeing: null = null;
+
+// Tuple
+const bucket: [string, number] = ['basketball', 5];
+
+// Enum
+enum Size { Small = 1, Medium = 2, Large = 3 };
+const sizeName: string = Size[2]; // 'Medium'
+const sizeNumber: number = Size.Small; // 1
+
+// Any
+let whatever: any = 'blargh';
+whatever = 5;
+whatever = true;
+whatever = Size.Large;
+whatever = bucket;
+
+// void
+const sing = (): void => {
+  console.log('la');
+};
+
+// never
+const error = (): never => {
+  throw Error('whoops');
+  // has neither a return type, nor a reachable end point
+};
+
